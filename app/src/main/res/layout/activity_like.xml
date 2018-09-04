@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_like"
+    android:background="@drawable/background1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Không có dữ liệu!"
+       android:textStyle="bold"
+       android:textColor="@android:color/black"
+       android:textSize="20dp"
+       android:visibility="gone"
+       android:id="@+id/tv_like_checkshow"
+       android:layout_centerInParent="true"/>
+    <ExpandableListView
+        android:id="@+id/expand_list_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:divider="@color/colorcam1"
+        android:dividerHeight="1dp"></ExpandableListView>
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id_banner" />
+</RelativeLayout>

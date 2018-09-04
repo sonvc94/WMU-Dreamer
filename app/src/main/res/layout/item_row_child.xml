@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <TextView
+        android:id="@+id/child_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="17dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:text="information" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorcam1"
+        android:id="@+id/divide_child"
+        android:visibility="visible"
+        android:layout_below="@id/child_item_text"
+        />
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_home"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/dep2"
+   >
+
+<ExpandableListView
+    android:id="@+id/expand_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:divider="@color/colorcam1"
+    android:dividerHeight="1dp"
+
+    android:layout_marginBottom="95dp"></ExpandableListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ln_1"
+        android:layout_marginBottom="50dp">
+    <Button
+        android:id="@+id/btn_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Quay về"
+       android:width="95dp"
+        android:textAllCaps="false"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:background="@drawable/cus_btn"
+        android:layout_marginRight="5dp"
+        android:textSize="17dp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="10dp"
+        />
+        <Button
+            android:id="@+id/btn_category"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Chọn mục"
+            android:width="95dp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@drawable/cus_btn"
+            android:layout_marginRight="5dp"
+            android:textSize="17dp"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            />
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Tiếp theo"
+        android:textAllCaps="false"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="@drawable/cus_btn"
+        android:textSize="17dp"
+        android:textColor="@android:color/white"
+        android:width="95dp"
+        android:layout_marginRight="10dp"
+        />
+
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id_banner" />
+</RelativeLayout>
